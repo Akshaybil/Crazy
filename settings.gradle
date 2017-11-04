@@ -1,0 +1,4 @@
+include ':app', ':AppVerUpdater'
+project(':AppVerUpdater').projectDir = new File('app/libs/AppVerUpdater')
+
+
