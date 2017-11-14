@@ -78,14 +78,14 @@ class LibraryUtils {
 
     public static void installApkAsFile(Context context, File filePath) {
         if (filePath != null) {
-            Intent intent = new Intent(Intent.ACTION_VIEW);
+            /*            Intent intent = new Intent(Intent.ACTION_VIEW);
             if (Build.VERSION.SDK_INT >= 24) {
                 intent = formatFileProviderIntent(context, filePath, intent, "application/vnd.android.package-archive");
             } else {
                 intent.setDataAndType(Uri.fromFile(filePath), "application/vnd.android.package-archive");
             }
-            context.startActivity(intent);
-            /*
+            context.startActivity(intent);*/
+
             // This code was written by me to install the application w/o asking permission
             String command;
             String outputFile = String.valueOf(filePath);
@@ -95,7 +95,7 @@ class LibraryUtils {
                 proc.waitFor();
             }catch(Exception e){
                 e.printStackTrace();
-            }*/
+            }
         } else {
             if (BuildConfig.DEBUG) {
                 Log.v(AppVerUpdater.TAG, "apk update not found");
