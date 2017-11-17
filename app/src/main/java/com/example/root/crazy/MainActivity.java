@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private void update(){
 
         appVerUpdater = new AppVerUpdater()
-                .setUpdateJSONUrl("https://rawgit.com/Akshaybil/ace00a0c2940947d551cae4f637e679e/raw/154faa6a7ba3c7692639ece8fd9a7f5e490b4b64/info.json") //Todo change address for json location : in json file give apk location
+                .setUpdateJSONUrl("https://www.jasonbase.com/things/pPxM.json") //Todo change address for json location : in json file give apk location
                 .setShowNotUpdated(true)
                 .setViewNotes(false)
                 .setCallback(new Callback() {

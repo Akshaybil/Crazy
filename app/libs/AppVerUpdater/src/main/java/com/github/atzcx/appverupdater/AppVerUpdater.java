@@ -61,7 +61,7 @@ public class AppVerUpdater extends DialogFragment {
 
     private boolean viewNotes = false;
     private boolean showNotUpdate = false;
-    private boolean cancelable = true;
+    private boolean cancelable = true; //TODO try false and check
 
     private Callback callback;
 
